@@ -10,11 +10,32 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var charIndex = 0.0
+    
+    let welcomeText = "Welcome"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        for letter in welcomeText {
+            
+            Timer.scheduledTimer(withTimeInterval: 0.05 * charIndex, repeats: false) { (timer) in
+                
+                self.welcomeLabel.text?.append(letter)
+            }
+            charIndex += 1
+        }
     }
+    
 
+    
+  
+    
+   
+    
 
 }
 

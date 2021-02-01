@@ -13,9 +13,12 @@
 		5C703CAD25C8561500E7490C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CAB25C8561500E7490C /* Main.storyboard */; };
 		5C703CAF25C8561600E7490C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CAE25C8561600E7490C /* Assets.xcassets */; };
 		5C703CB225C8561600E7490C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CB025C8561600E7490C /* LaunchScreen.storyboard */; };
+		89694E0418EC8AA23E681681 /* Pods_Chat2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat2021.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510041F1CDECD1B7960CFC47 /* Pods-Chat2021.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat2021.release.xcconfig"; path = "Target Support Files/Pods-Chat2021/Pods-Chat2021.release.xcconfig"; sourceTree = "<group>"; };
 		5C703CA225C8561500E7490C /* Chat2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C703CA525C8561500E7490C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C703CA725C8561500E7490C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5C703CAE25C8561600E7490C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C703CB125C8561600E7490C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C703CB325C8561600E7490C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat2021.debug.xcconfig"; path = "Target Support Files/Pods-Chat2021/Pods-Chat2021.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89694E0418EC8AA23E681681 /* Pods_Chat2021.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17419376D8F6A960D6808C9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C703C9925C8561500E7490C = {
 			isa = PBXGroup;
 			children = (
 				5C703CA425C8561500E7490C /* Chat2021 */,
 				5C703CA325C8561500E7490C /* Products */,
+				B745CA8D0A689754A7D71D52 /* Pods */,
+				17419376D8F6A960D6808C9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Chat2021;
 			sourceTree = "<group>";
 		};
+		B745CA8D0A689754A7D71D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */,
+				510041F1CDECD1B7960CFC47 /* Pods-Chat2021.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C703CB625C8561600E7490C /* Build configuration list for PBXNativeTarget "Chat2021" */;
 			buildPhases = (
+				77269A4BA0EAD2104C487615 /* [CP] Check Pods Manifest.lock */,
 				5C703C9E25C8561500E7490C /* Sources */,
 				5C703C9F25C8561500E7490C /* Frameworks */,
 				5C703CA025C8561500E7490C /* Resources */,
+				AFCAF79C93164640E00F03AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77269A4BA0EAD2104C487615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chat2021-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCAF79C93164640E00F03AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chat2021/Pods-Chat2021-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chat2021/Pods-Chat2021-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chat2021/Pods-Chat2021-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C703C9E25C8561500E7490C /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5C703CB725C8561600E7490C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		5C703CB825C8561600E7490C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510041F1CDECD1B7960CFC47 /* Pods-Chat2021.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
