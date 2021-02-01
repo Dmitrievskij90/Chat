@@ -21,25 +21,23 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let label = LTMorphingLabel(frame: CGRect(x: 220, y: 440, width: 140, height: 200))
+        let label = LTMorphingLabel()//(frame: CGRect(x: 220, y: 440, width: 140, height: 200))
         label.text = welcomeText
-        label.font = UIFont(name:"Baskerville", size: 31.0)
+        label.font = UIFont(name:"Baskerville", size: 29.0)
+        label.textAlignment = .center
         
         view.addSubview(label)
         
-        label.center = self.view.center
+        label.translatesAutoresizingMaskIntoConstraints = false
 
-        label.center.x = self.view.center.x
-
-        label.center.y = self.view.center.y
-
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            
-            label.widthAnchor.constraint(equalToConstant: 200),
-            label.heightAnchor.constraint(equalToConstant: 200)
-        ])
+//        NSLayoutConstraint.activate([
+        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+//        label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        label.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 200).isActive = true
+//        ])
         
         label.morphingEffect = .anvil
         
