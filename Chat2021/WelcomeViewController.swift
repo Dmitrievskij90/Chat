@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import LTMorphingLabel
 
 class WelcomeViewController: UIViewController {
     
     
-    @IBOutlet weak var welcomeLabel: UILabel!
     
     var charIndex = 0.0
     
@@ -20,14 +20,43 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for letter in welcomeText {
+        
+        let label = LTMorphingLabel(frame: CGRect(x: 220, y: 440, width: 140, height: 200))
+        label.text = welcomeText
+        label.font = UIFont(name:"Baskerville", size: 31.0)
+        
+        view.addSubview(label)
+        
+        label.center = self.view.center
+
+        label.center.x = self.view.center.x
+
+        label.center.y = self.view.center.y
+
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
-            Timer.scheduledTimer(withTimeInterval: 0.05 * charIndex, repeats: false) { (timer) in
-                
-                self.welcomeLabel.text?.append(letter)
-            }
-            charIndex += 1
-        }
+            label.widthAnchor.constraint(equalToConstant: 200),
+            label.heightAnchor.constraint(equalToConstant: 200)
+        ])
+        
+        label.morphingEffect = .anvil
+        
+        label.morphingEnabled = true
+        label.morphingDuration = 1
+        label.morphingCharacterDelay = 0.5
+        label.start()
+        
+        
+//        for letter in welcomeText {
+//
+//            Timer.scheduledTimer(withTimeInterval: 0.05 * charIndex, repeats: false) { (timer) in
+//
+//                self.welcomeLabel.text?.append(letter)
+//            }
+//            charIndex += 1
+//        }
     }
     
 
