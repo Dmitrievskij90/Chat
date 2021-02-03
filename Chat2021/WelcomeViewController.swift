@@ -42,7 +42,7 @@ class WelcomeViewController: UIViewController {
 
 //        NSLayoutConstraint.activate([
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 300).isActive = true
 //        label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
         label.widthAnchor.constraint(equalToConstant: 200).isActive = true
@@ -73,8 +73,12 @@ class WelcomeViewController: UIViewController {
 //        }
     }
     
-
+    @IBAction func registerTapped(_ sender: UIButton) {
+    }
+    
   
+    @IBAction func loginTapped(_ sender: Any) {
+    }
     
    
     
