@@ -11,8 +11,6 @@ import LTMorphingLabel
 
 class WelcomeViewController: UIViewController {
     
-    
-    
     var charIndex = 0.0
     
     let welcomeText = "Welcome"
@@ -46,6 +44,19 @@ class WelcomeViewController: UIViewController {
         label.morphingCharacterDelay = 0.5
         label.start()
         
+        let buttonView = UIView()
+        buttonView.backgroundColor = #colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)
+        view.addSubview(buttonView)
+        
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        buttonView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        buttonView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 100).isActive = true
+//        buttonView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70).isActive = true
+//        buttonView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 30).isActive = true
+        
+        buttonView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        buttonView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
         
 //        for letter in welcomeText {
 //
@@ -58,7 +69,6 @@ class WelcomeViewController: UIViewController {
     }
     
 
-    
   
     
    
