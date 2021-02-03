@@ -14,13 +14,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-AA-CQO">
+                                <rect key="frame" x="109" y="159" width="196" height="0.0"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.92549019610000005" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-py-V4K">
+                                <rect key="frame" x="87" y="477" width="240" height="255"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afz-TX-PXl">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="114.5"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.92549019610000005" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-3y-qdG">
+                                        <rect key="frame" x="0.0" y="140.5" width="240" height="114.5"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.92549019610000005" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="m5i-3y-qdG" secondAttribute="bottom" id="052-WG-jPv"/>
+                                    <constraint firstItem="m5i-3y-qdG" firstAttribute="top" secondItem="afz-TX-PXl" secondAttribute="bottom" constant="26" id="6sn-rZ-xXl"/>
+                                    <constraint firstItem="afz-TX-PXl" firstAttribute="leading" secondItem="h7H-py-V4K" secondAttribute="leading" id="HNp-p9-kaR"/>
+                                    <constraint firstItem="m5i-3y-qdG" firstAttribute="leading" secondItem="h7H-py-V4K" secondAttribute="leading" id="Ogz-6h-XiP"/>
+                                    <constraint firstItem="m5i-3y-qdG" firstAttribute="top" secondItem="afz-TX-PXl" secondAttribute="bottom" constant="26" id="Wmb-U3-g3M"/>
+                                    <constraint firstAttribute="trailing" secondItem="afz-TX-PXl" secondAttribute="trailing" id="nKg-Tw-Fvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="m5i-3y-qdG" secondAttribute="trailing" id="x15-bJ-jCg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h7H-py-V4K" secondAttribute="trailing" constant="87" id="Fwq-Hw-OFA"/>
+                            <constraint firstItem="h7H-py-V4K" firstAttribute="top" secondItem="SzH-AA-CQO" secondAttribute="bottom" constant="318" id="hkx-At-g2K"/>
+                            <constraint firstItem="h7H-py-V4K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="inf-lQ-PWW"/>
+                            <constraint firstItem="SzH-AA-CQO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="kij-jv-LTp"/>
+                            <constraint firstItem="SzH-AA-CQO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="phS-bT-zav"/>
+                            <constraint firstItem="h7H-py-V4K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qLR-Mq-od9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h7H-py-V4K" secondAttribute="bottom" constant="130" id="tT9-tk-1rO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SzH-AA-CQO" secondAttribute="trailing" constant="109" id="w1w-QC-vc5"/>
+                            <constraint firstItem="h7H-py-V4K" firstAttribute="top" secondItem="SzH-AA-CQO" secondAttribute="bottom" constant="318" id="xf8-Gj-GOD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="m5i-3y-qdG" id="Gp8-fe-cuj"/>
+                        <outlet property="registerView" destination="afz-TX-PXl" id="aWd-BR-24q"/>
+                        <outlet property="welcomeLAbel" destination="SzH-AA-CQO" id="3fA-Sb-wiv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="117"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
     </scenes>
 </document>
