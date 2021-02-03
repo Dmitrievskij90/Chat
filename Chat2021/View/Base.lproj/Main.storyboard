@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLo-Oc-yC8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-py-V4K">
-                                <rect key="frame" x="87" y="477" width="240" height="255"/>
+                                <rect key="frame" x="87" y="521" width="240" height="211"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afz-TX-PXl">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="92.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNu-G8-SZ3">
-                                                <rect key="frame" x="0.0" y="1" width="240" height="112.5"/>
+                                                <rect key="frame" x="0.0" y="1" width="240" height="90.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                                 <state key="normal" title="Register">
@@ -30,6 +30,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLo-EY-wC6"/>
+                                                    <segue destination="Dpg-ep-cba" kind="show" identifier="RegisterId" id="XDI-FN-ce8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -42,10 +43,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-3y-qdG">
-                                        <rect key="frame" x="0.0" y="140.5" width="240" height="114.5"/>
+                                        <rect key="frame" x="0.0" y="118.5" width="240" height="92.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCE-hv-Ebk">
-                                                <rect key="frame" x="0.0" y="1" width="240" height="112.5"/>
+                                                <rect key="frame" x="0.0" y="1" width="240" height="90.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                                 <state key="normal" title="Log In">
@@ -53,6 +54,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zh5-4N-uHr"/>
+                                                    <segue destination="sRa-fP-jyK" kind="show" identifier="LoginID" id="e45-8R-mbd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -76,7 +78,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cube-42317_1280" translatesAutoresizingMaskIntoConstraints="NO" id="VkK-Dn-Gl4">
-                                <rect key="frame" x="124" y="117" width="166" height="128"/>
+                                <rect key="frame" x="124" y="161" width="166" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="YPh-PV-acC"/>
                                 </constraints>
@@ -96,6 +98,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Oan-uv-hjf"/>
                     <connections>
                         <outlet property="loginView" destination="m5i-3y-qdG" id="Gp8-fe-cuj"/>
                         <outlet property="registerView" destination="afz-TX-PXl" id="aWd-BR-24q"/>
@@ -103,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="hAW-hN-wNz">
@@ -115,10 +118,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yHe-wE-GTd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Igx-tH-6Gb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cb0-4g-W85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="514"/>
+            <point key="canvasLocation" x="1939.1304347826087" y="513.61607142857144"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="8n3-fp-oyu">
@@ -130,10 +134,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hEQ-vE-yRB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lUy-uF-e1i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qxu-p1-CA2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="-171"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="-171.42857142857142"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="ZmP-Bd-zLb">
@@ -148,7 +153,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbF-6T-Bxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="78"/>
+            <point key="canvasLocation" x="2940.579710144928" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IHe-4b-ez8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QLo-Oc-yC8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8hZ-zC-5Gc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bPR-RQ-Hes"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43j-Wl-z1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>
