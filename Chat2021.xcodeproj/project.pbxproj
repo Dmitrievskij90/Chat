@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5C703CAD25C8561500E7490C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CAB25C8561500E7490C /* Main.storyboard */; };
 		5C703CAF25C8561600E7490C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CAE25C8561600E7490C /* Assets.xcassets */; };
 		5C703CB225C8561600E7490C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C703CB025C8561600E7490C /* LaunchScreen.storyboard */; };
+		5C8D868625CB0383007FE61A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D868525CB0383007FE61A /* GoogleService-Info.plist */; };
 		89694E0418EC8AA23E681681 /* Pods_Chat2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		5C703CAE25C8561600E7490C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C703CB125C8561600E7490C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C703CB325C8561600E7490C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C8D868525CB0383007FE61A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat2021.debug.xcconfig"; path = "Target Support Files/Pods-Chat2021/Pods-Chat2021.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				5C703CAE25C8561600E7490C /* Assets.xcassets */,
 				5C703CB025C8561600E7490C /* LaunchScreen.storyboard */,
 				5C703CB325C8561600E7490C /* Info.plist */,
+				5C8D868525CB0383007FE61A /* GoogleService-Info.plist */,
 			);
 			path = Chat2021;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */,
 				510041F1CDECD1B7960CFC47 /* Pods-Chat2021.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C703CB225C8561600E7490C /* LaunchScreen.storyboard in Resources */,
+				5C8D868625CB0383007FE61A /* GoogleService-Info.plist in Resources */,
 				5C703CAF25C8561600E7490C /* Assets.xcassets in Resources */,
 				5C703CAD25C8561500E7490C /* Main.storyboard in Resources */,
 			);
