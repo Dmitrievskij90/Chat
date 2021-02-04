@@ -10,13 +10,17 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -26,5 +30,7 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+    }
+    
 }
