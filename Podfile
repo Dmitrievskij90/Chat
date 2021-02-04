@@ -13,5 +13,6 @@ target 'Chat2021' do
 pod 'LTMorphingLabel'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'IQKeyboardManagerSwift'
 
 end

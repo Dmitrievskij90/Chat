@@ -201,6 +201,7 @@
                         <outlet property="exView" destination="sCo-qs-j4o" id="Tyo-FA-bRd"/>
                         <outlet property="loInButton" destination="LER-GM-LLF" id="fnh-9j-yBQ"/>
                         <outlet property="passwordTextField" destination="p4j-wE-wSl" id="Xyn-Gp-ccU"/>
+                        <segue destination="Apd-Gd-u5e" kind="show" identifier="LoginIdPressed" id="FGc-ko-RNV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cb0-4g-W85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -358,6 +359,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FGc-ko-RNV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="cube-42317_1280" width="1280" height="1229"/>
     </resources>
