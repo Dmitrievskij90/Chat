@@ -10,10 +10,22 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-  
+    @IBOutlet weak var exView: UIView!
+    @IBOutlet weak var loInButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        exView.layer.cornerRadius = 0.5 * exView.bounds.size.width
+        exView.clipsToBounds = true
+        
+        loInButton.layer.cornerRadius = 0.5 * loInButton.bounds.size.width
+        loInButton.clipsToBounds = true
+        
 
        
     }
@@ -28,5 +40,7 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logInButtonPressed(_ sender: UIButton) {
+    }
+    
 }
