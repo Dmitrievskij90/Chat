@@ -21,6 +21,7 @@ class ChatViewController: UIViewController {
         
         tableView.dataSource = self
         
+        tableView.register(UINib(nibName: "ReusableTableViewCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
 
         navigationItem.hidesBackButton = true
     }
