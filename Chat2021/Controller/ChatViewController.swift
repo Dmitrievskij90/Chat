@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController, UITableViewDataSource {
+class ChatViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,23 +25,6 @@ class ChatViewController: UIViewController, UITableViewDataSource {
         navigationItem.hidesBackButton = true
     }
     
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let message = messages[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifeir, for: indexPath)
-        
-        cell.textLabel?.text = message.body
-        
-        return cell
-    }
-    
 
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
@@ -53,5 +36,26 @@ class ChatViewController: UIViewController, UITableViewDataSource {
             print ("Error signing out: %@", signOutError)
         }
     }
+    
+}
+
+//MARK: - Data Sourse extention
+
+extension ChatViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return messages.count
+     }
+     
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         
+         let message = messages[indexPath.row]
+         
+         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifeir, for: indexPath)
+         
+         cell.textLabel?.text = message.body
+         
+         return cell
+     }
     
 }
