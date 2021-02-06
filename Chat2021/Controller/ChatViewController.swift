@@ -45,18 +45,20 @@ class ChatViewController: UIViewController {
 extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return messages.count
-     }
-     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         
-         let message = messages[indexPath.row]
-         
-         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifeir, for: indexPath)
-         
-         cell.textLabel?.text = message.body
-         
-         return cell
-     }
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let message = messages[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath) as! ReusableTableViewCell
+        
+        cell.messageLabel.text = message.body
+        
+        tableView.reloadData()
+        
+        return cell
+    }
     
 }

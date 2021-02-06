@@ -9,10 +9,19 @@
 import UIKit
 
 class ReusableTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var barberImageView: UIImageView!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+      messageView.layer.cornerRadius = messageView.frame.size.height / 3.5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
