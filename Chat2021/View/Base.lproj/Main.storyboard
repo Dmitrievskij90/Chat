@@ -117,18 +117,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GgX-KV-vxj">
-                                <rect key="frame" x="57" y="108" width="310" height="141"/>
+                                <rect key="frame" x="57" y="108" width="300" height="141"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-qC-uHg">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kostia@28.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZC6-hB-ZTa">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="63"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="63"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUl-D0-Lgb">
-                                                <rect key="frame" x="0.0" y="69" width="310" height="1"/>
+                                                <rect key="frame" x="0.0" y="69" width="300" height="1"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="up0-Le-krc"/>
@@ -146,15 +146,15 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUG-0f-iwd">
-                                        <rect key="frame" x="0.0" y="78" width="310" height="63"/>
+                                        <rect key="frame" x="0.0" y="78" width="300" height="63"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qwert1" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-wE-wSl">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="55"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNL-tY-RRW">
-                                                <rect key="frame" x="0.0" y="61" width="310" height="1"/>
+                                                <rect key="frame" x="0.0" y="61" width="300" height="1"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="0pk-p4-WdH"/>
@@ -348,7 +348,7 @@
             </objects>
             <point key="canvasLocation" x="1944.9275362318842" y="-171.42857142857142"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--💈-->
         <scene sceneID="ZmP-Bd-zLb">
             <objects>
                 <viewController id="Apd-Gd-u5e" customClass="ChatViewController" customModule="Chat2021" customModuleProvider="target" sceneMemberID="viewController">
@@ -375,7 +375,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gzT-6B-9Ud"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4z3-vS-7V1"/>
+                    <navigationItem key="navigationItem" title="💈" id="4z3-vS-7V1">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="UrU-yf-CXh">
+                            <connections>
+                                <action selector="logOutPressed:" destination="Apd-Gd-u5e" id="SUv-v0-LJk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbF-6T-Bxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

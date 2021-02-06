@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
                     print(e)
                 } else {
                     
-                    self.performSegue(withIdentifier: "LoginIdPressed", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
                 
             }

@@ -49,7 +49,7 @@ class RegisterViewController: UIViewController {
                 if let e = error {
                     print(e)
                 } else {
-                    self.performSegue(withIdentifier: "RegesterIdPressed", sender: self)
+                    self.performSegue(withIdentifier: K.gegisterSegue, sender: self)
                 }
             }
         }

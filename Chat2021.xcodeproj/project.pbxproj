@@ -17,6 +17,7 @@
 		5C8D868925CB0AF7007FE61A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D868825CB0AF7007FE61A /* RegisterViewController.swift */; };
 		5C8D868B25CB0B10007FE61A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D868A25CB0B10007FE61A /* LoginViewController.swift */; };
 		5C8D868D25CB0B20007FE61A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D868C25CB0B20007FE61A /* ChatViewController.swift */; };
+		5CCE694825CE914F0038FF75 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE694725CE914F0038FF75 /* K.swift */; };
 		89694E0418EC8AA23E681681 /* Pods_Chat2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		5C8D868825CB0AF7007FE61A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5C8D868A25CB0B10007FE61A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C8D868C25CB0B20007FE61A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5CCE694725CE914F0038FF75 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat2021.debug.xcconfig"; path = "Target Support Files/Pods-Chat2021/Pods-Chat2021.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 		5C703CA425C8561500E7490C /* Chat2021 */ = {
 			isa = PBXGroup;
 			children = (
+				5CCE694625CE91250038FF75 /* Model */,
 				5C703CA525C8561500E7490C /* AppDelegate.swift */,
 				5C703CA725C8561500E7490C /* SceneDelegate.swift */,
 				5C8D868725CB0AC1007FE61A /* Controller */,
@@ -87,6 +90,7 @@
 				5C703CB025C8561600E7490C /* LaunchScreen.storyboard */,
 				5C703CB325C8561600E7490C /* Info.plist */,
 				5C8D868525CB0383007FE61A /* GoogleService-Info.plist */,
+				5CCE694725CE914F0038FF75 /* K.swift */,
 			);
 			path = Chat2021;
 			sourceTree = "<group>";
@@ -108,6 +112,13 @@
 				5C703CAB25C8561500E7490C /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5CCE694625CE91250038FF75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B745CA8D0A689754A7D71D52 /* Pods */ = {
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C703CAA25C8561500E7490C /* WelcomeViewController.swift in Sources */,
+				5CCE694825CE914F0038FF75 /* K.swift in Sources */,
 				5C703CA625C8561500E7490C /* AppDelegate.swift in Sources */,
 				5C703CA825C8561500E7490C /* SceneDelegate.swift in Sources */,
 				5C8D868B25CB0B10007FE61A /* LoginViewController.swift in Sources */,
