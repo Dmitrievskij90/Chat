@@ -19,8 +19,8 @@
 		5C8D868D25CB0B20007FE61A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D868C25CB0B20007FE61A /* ChatViewController.swift */; };
 		5CCE694825CE914F0038FF75 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE694725CE914F0038FF75 /* K.swift */; };
 		5CCE694A25CE952C0038FF75 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE694925CE952C0038FF75 /* MessageModel.swift */; };
-		5CCE694D25CE9DB00038FF75 /* ReusableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE694B25CE9DB00038FF75 /* ReusableTableViewCell.swift */; };
-		5CCE694E25CE9DB00038FF75 /* ReusableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE694C25CE9DB00038FF75 /* ReusableTableViewCell.xib */; };
+		5CD1DE7825D0489600DADB5D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1DE7625D0489600DADB5D /* MessageCell.swift */; };
+		5CD1DE7925D0489600DADB5D /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD1DE7725D0489600DADB5D /* MessageCell.xib */; };
 		89694E0418EC8AA23E681681 /* Pods_Chat2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DAFC21B3F00DF3F2E29218 /* Pods_Chat2021.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +41,8 @@
 		5C8D868C25CB0B20007FE61A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5CCE694725CE914F0038FF75 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		5CCE694925CE952C0038FF75 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
-		5CCE694B25CE9DB00038FF75 /* ReusableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewCell.swift; sourceTree = "<group>"; };
-		5CCE694C25CE9DB00038FF75 /* ReusableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableTableViewCell.xib; sourceTree = "<group>"; };
+		5CD1DE7625D0489600DADB5D /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		5CD1DE7725D0489600DADB5D /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		69F61572DDBBB40BF3910E35 /* Pods-Chat2021.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat2021.debug.xcconfig"; path = "Target Support Files/Pods-Chat2021/Pods-Chat2021.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				5C703CAB25C8561500E7490C /* Main.storyboard */,
+				5CD1DE7625D0489600DADB5D /* MessageCell.swift */,
+				5CD1DE7725D0489600DADB5D /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				5CCE694925CE952C0038FF75 /* MessageModel.swift */,
-				5CCE694B25CE9DB00038FF75 /* ReusableTableViewCell.swift */,
-				5CCE694C25CE9DB00038FF75 /* ReusableTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,10 +199,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD1DE7925D0489600DADB5D /* MessageCell.xib in Resources */,
 				5C703CB225C8561600E7490C /* LaunchScreen.storyboard in Resources */,
 				5C8D868625CB0383007FE61A /* GoogleService-Info.plist in Resources */,
 				5C703CAF25C8561600E7490C /* Assets.xcassets in Resources */,
-				5CCE694E25CE9DB00038FF75 /* ReusableTableViewCell.xib in Resources */,
 				5C703CAD25C8561500E7490C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CCE694D25CE9DB00038FF75 /* ReusableTableViewCell.swift in Sources */,
 				5C703CAA25C8561500E7490C /* WelcomeViewController.swift in Sources */,
 				5CCE694825CE914F0038FF75 /* K.swift in Sources */,
 				5C703CA625C8561500E7490C /* AppDelegate.swift in Sources */,
@@ -265,6 +264,7 @@
 				5C8D868B25CB0B10007FE61A /* LoginViewController.swift in Sources */,
 				5C8D868D25CB0B20007FE61A /* ChatViewController.swift in Sources */,
 				5C8D868925CB0AF7007FE61A /* RegisterViewController.swift in Sources */,
+				5CD1DE7825D0489600DADB5D /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

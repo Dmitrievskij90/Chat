@@ -13,7 +13,6 @@ struct K {
     static let gegisterSegue = "RegesterIdPressed"
     static let loginSegue = "LoginIdPressed"
     static let welcomeText = "Welcome"
-    static let cellIdentifeir = "ChatCell"
-    static let reusableCell = "ReusableID"
+    static let reusableCell = "ReusableCell"
     
 }

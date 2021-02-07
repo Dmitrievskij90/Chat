@@ -374,7 +374,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="Vk9-Q7-gsa" id="CIz-HF-Rl2"/>
+                        <outlet property="myTableView" destination="Vk9-Q7-gsa" id="CIz-HF-Rl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbF-6T-Bxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

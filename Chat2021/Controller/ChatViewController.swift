@@ -11,7 +11,7 @@ import Firebase
 
 class ChatViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var myTableView: UITableView!
     
     var messages:[MessageModel] = [MessageModel(sender: "Me", body: "Hello"),
                                   MessageModel(sender: "You", body: "How are you")]
@@ -19,9 +19,9 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
+        myTableView.dataSource = self
         
-        tableView.register(UINib(nibName: "ReusableTableViewCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
+        myTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
 
         navigationItem.hidesBackButton = true
     }
@@ -52,11 +52,9 @@ extension ChatViewController: UITableViewDataSource {
         
         let message = messages[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath) as! ReusableTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath) as! MessageCell
         
         cell.messageLabel.text = message.body
-        
-        tableView.reloadData()
         
         return cell
     }
