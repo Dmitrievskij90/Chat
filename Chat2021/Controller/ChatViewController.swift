@@ -12,12 +12,16 @@ import Firebase
 class ChatViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var messageView: UIView!
     
     var messages:[MessageModel] = [MessageModel(sender: "Me", body: "Hello"),
                                   MessageModel(sender: "You", body: "How are you")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageView.layer.cornerRadius = messageView.frame.size.height / 3.5
         
         myTableView.dataSource = self
         
@@ -26,7 +30,6 @@ class ChatViewController: UIViewController {
         navigationItem.hidesBackButton = true
     }
     
-
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         
         let firebaseAuth = Auth.auth()
@@ -37,6 +40,10 @@ class ChatViewController: UIViewController {
             print ("Error signing out: %@", signOutError)
         }
     }
+    
+    @IBAction func sendButtonPressed(_ sender: UIButton) {
+    }
+    
     
 }
 
