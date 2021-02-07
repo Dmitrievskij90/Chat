@@ -66,8 +66,33 @@ class ChatViewController: UIViewController {
     
     func loadMessages() {
         
-        
-        
+        db.collection("messages").addSnapshotListener() { (querySnapshot, err) in
+            
+            self.messages = []
+            
+            if let e = err {
+                
+                print("We have problem with retriving data \(e)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    
+                    for doc in snapshotDocuments {
+                        
+                        let data = doc.data()
+                        
+                        if let messageSender = data["sender"] as? String, let messageBody = data["body"] as? String {
+                            let newMessage = MessageModel(sender: messageSender, body: messageBody)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.myTableView.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
         
     }
     
