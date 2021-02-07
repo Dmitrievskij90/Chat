@@ -15,6 +15,8 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var messageView: UIView!
     
+    let db = Firestore.firestore()
+    
     var messages:[MessageModel] = [MessageModel(sender: "Me", body: "Hello"),
                                   MessageModel(sender: "You", body: "How are you")]
     
@@ -28,6 +30,9 @@ class ChatViewController: UIViewController {
         myTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: K.reusableCell)
 
         navigationItem.hidesBackButton = true
+        
+        loadMessages()
+        
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
@@ -42,8 +47,29 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendButtonPressed(_ sender: UIButton) {
+        
+        if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
+            db.collection("messages").addDocument(data: [
+                "sender" : messageSender,
+                "body" : messageBody,
+                "date": Date().timeIntervalSince1970]) { (error) in
+                    if let e = error {
+                        print("There was an issue saving data to firestore, \(e)")
+                               } else {
+                                   DispatchQueue.main.async {
+                                       self.messageTextField.text = ""
+                    }
+                }
+            }
+        }
     }
     
+    func loadMessages() {
+        
+        
+        
+        
+    }
     
 }
 
