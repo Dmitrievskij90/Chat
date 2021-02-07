@@ -66,7 +66,7 @@ class ChatViewController: UIViewController {
     
     func loadMessages() {
         
-        db.collection("messages").addSnapshotListener() { (querySnapshot, err) in
+        db.collection("messages").order(by: "date").addSnapshotListener() { (querySnapshot, err) in
             
             self.messages = []
             
@@ -113,6 +113,21 @@ extension ChatViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.reusableCell, for: indexPath) as! MessageCell
         
         cell.messageLabel.text = message.body
+        
+        if message.sender == Auth.auth().currentUser?.email {
+            
+            cell.custumerImageView.isHidden = true
+            cell.barberImageView.isHidden = false
+            cell.messageView.backgroundColor = #colorLiteral(red: 0.1647058824, green: 0.831372549, blue: 1, alpha: 1)
+            cell.messageLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        } else {
+            
+            cell.custumerImageView.isHidden = false
+            cell.barberImageView.isHidden = true
+            cell.messageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            cell.messageLabel.textColor = #colorLiteral(red: 1, green: 0, blue: 0.8196078431, alpha: 1)
+            
+        }
         
         return cell
     }

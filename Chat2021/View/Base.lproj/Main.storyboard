@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Chat2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-py-V4K">
-                                <rect key="frame" x="87" y="521" width="240" height="211"/>
+                                <rect key="frame" x="87" y="433" width="240" height="211"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afz-TX-PXl">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="92.5"/>
@@ -78,7 +78,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cube-42317_1280" translatesAutoresizingMaskIntoConstraints="NO" id="VkK-Dn-Gl4">
-                                <rect key="frame" x="124" y="161" width="166" height="128"/>
+                                <rect key="frame" x="124" y="73" width="166" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="YPh-PV-acC"/>
                                 </constraints>
@@ -113,11 +113,11 @@
             <objects>
                 <viewController id="sRa-fP-jyK" customClass="LoginViewController" customModule="Chat2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QCR-fI-ZOv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GgX-KV-vxj">
-                                <rect key="frame" x="57" y="108" width="300" height="141"/>
+                                <rect key="frame" x="57" y="20" width="300" height="141"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgC-qC-uHg">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
@@ -235,11 +235,11 @@
             <objects>
                 <viewController id="Dpg-ep-cba" customClass="RegisterViewController" customModule="Chat2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87m-NQ-8HV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="YIV-Kp-Jj3">
-                                <rect key="frame" x="52" y="110" width="310" height="189"/>
+                                <rect key="frame" x="52" y="22" width="310" height="189"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztb-lN-Rj1">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="79"/>
@@ -353,19 +353,19 @@
             <objects>
                 <viewController id="Apd-Gd-u5e" customClass="ChatViewController" customModule="Chat2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oCE-ue-c8b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QHL-xW-SGx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vk9-Q7-gsa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="832"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vk9-Q7-gsa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="744"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="separatorColor" red="1" green="0.0" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrc-MS-FCp">
-                                        <rect key="frame" x="0.0" y="834" width="414" height="62"/>
+                                        <rect key="frame" x="0.0" y="746" width="414" height="62"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fje-v6-IVC">
                                                 <rect key="frame" x="10" y="8" width="394" height="34"/>
@@ -442,9 +442,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QLo-Oc-yC8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8hZ-zC-5Gc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8hZ-zC-5Gc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -457,7 +458,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FGc-ko-RNV"/>
+        <segue reference="y1s-l6-7gJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cube-42317_1280" width="1280" height="1229"/>
